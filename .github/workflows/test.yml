@@ -28,4 +28,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: code-coverage-report
-          path: ./output/**/*
+          path: |
+            ./output/**/*
+            !./output/bin/*
